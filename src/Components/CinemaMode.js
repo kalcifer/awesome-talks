@@ -18,7 +18,7 @@ const Column = styled(Col)`
   width: 90%;
   left: 50%;
   transform: translateX(-50%);
-  background: ${props => props.theme.white};
+  background: ${props => props.theme.primary};
   padding: ${remcalc(20)};
   max-height: 90%;
   overflow: scroll;
@@ -36,7 +36,7 @@ const Button = styled.button`
   background: transparent;
   display: block;
   border: none;
-  color: #d62d22;
+  color: ${props => props.theme.cinema};
   font-weight: bold;
   text-align: right;
   padding: 0;

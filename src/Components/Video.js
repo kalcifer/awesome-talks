@@ -29,14 +29,14 @@ const Speaker = styled.p`
 const Name = styled.h2`
   font-weight: 600;
   font-size: ${remcalc(18)};
-  color: ${props => props.theme.black};
+  color: ${props => props.theme.main};
 `
 
 const Description = styled.p`
   opacity: 0.8;
   font-family: Montserrat-Light;
   font-size: ${remcalc(14)};
-  color: ${props => props.theme.black};
+  color: ${props => props.theme.main};
   letter-spacing: ${remcalc(0.11)};
   line-height: ${remcalc(21)};
 `

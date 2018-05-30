@@ -9,7 +9,7 @@ const Icon = styled.svg`
   cursor: pointer;
 
   path {
-    fill: ${props => props.theme.darkGrey};
+    fill: ${props => props.theme.tertiary};
   }
 `
 

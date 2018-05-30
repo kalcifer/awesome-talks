@@ -7,7 +7,7 @@ export default styled(Link)`
   border: none;
   opacity: 0.8;
   font-weight: 500;
-  color: ${props => props.theme.darkGrey};
+  color: ${props => props.theme.secondary};
   margin-top: ${remcalc(-10)};
   padding: 0;
   margin-bottom: ${remcalc(10)};
@@ -15,7 +15,7 @@ export default styled(Link)`
 
   &:hover {
     opacity: 1;
-    color: ${props => props.theme.darkGrey};
+    color: ${props => props.theme.main};
   }
   &:after {
     display: none;

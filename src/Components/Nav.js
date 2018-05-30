@@ -77,7 +77,7 @@ injectGlobal`
 const Name = styled.h2`
   font-size: 400;
   font-size: ${remcalc(22)};
-  color: ${props => props.theme.black};
+  color: ${props => props.theme.main};
   letter-spacing: ${remcalc(-0.63)};
 `
 

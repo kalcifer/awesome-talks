@@ -3,10 +3,10 @@ import styled from 'styled-components'
 import remcalc from 'remcalc'
 
 export default styled(Link)`
-  background-color: #fbfbfb;
-  border: ${remcalc(1)} solid #2e3d46;
+  background-color: ${props => props.theme.primary};
+  border: ${remcalc(1)} solid ${props => props.theme.blue};
   padding: ${remcalc(6)} ${remcalc(15)};
-  color: #2e3d46;
+  color: ${props => props.theme.blue};
   border-radius: ${remcalc(5)};
   transition: all 300ms ease-in-out;
   margin: ${remcalc(5)};
@@ -18,7 +18,8 @@ export default styled(Link)`
   }
 
   &:hover {
-    border: ${remcalc(1)} solid #337294;
-    color: #337294;
+    border: ${remcalc(1)} solid ${props => props.theme.primary};
+    color: ${props => props.theme.primary};
+    background: ${props => props.theme.blue};
   }
 `

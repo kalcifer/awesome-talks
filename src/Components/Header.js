@@ -14,7 +14,7 @@ export const Title = styled.h1`
   font-weight: 600;
   font-size: ${remcalc(90)};
   line-height: 1.2;
-  color: ${props => props.theme.black};
+  color: ${props => props.theme.main};
   letter-spacing: ${remcalc(-2.46)};
   margin-top: 0;
   margin-bottom: 0;
@@ -55,7 +55,7 @@ const Label = styled.label`
   margin: 0 auto;
   border-radius: ${remcalc(100)};
   transition: all 0.2s ease-in-out;
-  background-color: ${props => props.theme.lightGrey};
+  background-color: ${props => props.theme.secondary};
 
   &:after {
     display: inline-block;
@@ -69,7 +69,7 @@ const Label = styled.label`
   & i {
     height: ${remcalc(28)};
     width: ${remcalc(28)};
-    background: ${props => props.theme.white};
+    background: ${props => props.theme.primary};
     display: inline-block;
     border-radius: ${remcalc(100)};
     margin-top: ${remcalc(2)};
@@ -107,10 +107,12 @@ const Input = styled.input`
 
   &:checked + label > i {
     margin-left: ${remcalc(24)};
+    background-color: ${props => props.theme.main};
   }
 
   &:checked + label:active > i {
     margin-left: ${remcalc(18)};
+    background-color: ${props => props.theme.secondary};
   }
 `
 
